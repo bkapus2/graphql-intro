@@ -16,6 +16,6 @@ const Candidate = sequelize.define('candidates', {
   timestamps: false,
 });
 
-Candidate.hasMany(Email, { foreignKey: 'candidate_id', sourceKey: 'emails' });
+Candidate.Emails = Candidate.hasMany(Email);
 
 export default Candidate;

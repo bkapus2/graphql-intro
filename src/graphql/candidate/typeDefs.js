@@ -16,6 +16,7 @@ export default `
 
   input CandidateCreate {
     name: String!
+    emails: [EmailChainCreate!]
   }
 
   extend type Mutation {

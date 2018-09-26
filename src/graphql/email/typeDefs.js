@@ -23,6 +23,11 @@ export default `
     isBad: Boolean
   }
 
+  input EmailChainCreate {
+    address: String!
+    isBad: Boolean
+  }
+
   extend type Mutation {
     createEmail(create: EmailCreate): Email
     updateEmail(id: Int!, update: EmailUpdate): Email
