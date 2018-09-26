@@ -1,4 +1,4 @@
-import { ApolloServer, gql } from 'apollo-server-hapi';
+import { ApolloServer } from 'apollo-server-hapi';
 import Hapi from 'hapi';
 import schema from './graphql';
 import loaders from './graphql/loaders';

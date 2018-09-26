@@ -1,5 +1,4 @@
 import Candidate from './model';
-import Email from '../email/model';
 
 export default {
   Query: {
