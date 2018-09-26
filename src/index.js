@@ -21,7 +21,9 @@ async function startServer() {
   });
   await server.installSubscriptionHandlers(app.listener);
   await app.start();
-  console.log('server up');
+  console.log('server up'); // eslint-disable-line no-console
 }
 
-startServer().catch(error => console.log(error.stack));
+startServer().catch(error => {
+  console.log(error.stack); // eslint-disable-line no-console
+});

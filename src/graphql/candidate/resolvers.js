@@ -7,7 +7,6 @@ export default {
   },
   Mutation: {
     createCandidate: async function (context, { create }) {
-      console.log(create);
       return Candidate.create(create, {
         include: [
           { association: Candidate.Emails },

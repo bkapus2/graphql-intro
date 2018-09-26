@@ -43,7 +43,7 @@ module.exports = {
         "functions": "never",
       }
     ],
-    "no-console": 0,
+    "no-console": "error",
   },
   "parserOptions": {
     "sourceType": "module",
