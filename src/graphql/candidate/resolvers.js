@@ -15,8 +15,8 @@ export default {
     }, 
   },
   Candidate: {
-    emails: async function ({ id: candidateId }) {
-      return Email.findAll({ where: { candidateId } });
+    emails: async function ({ id: candidateId }, args, context) {
+      return context.loaders.emails.byCandidateId.load(candidateId);
     },
   },
 };

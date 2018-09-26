@@ -1,6 +1,7 @@
 import { ApolloServer, gql } from 'apollo-server-hapi';
 import Hapi from 'hapi';
 import schema from './graphql';
+import loaders from './graphql/loaders';
 
 const config = {
   server: {
@@ -11,7 +12,7 @@ const config = {
 async function startServer() {
   const server = new ApolloServer({
     schema,
-    context: async () => Promise.resolve({ request: 'request' }),
+    context: async (context) => Promise.resolve({ loaders: loaders(context) }),
   });
 
   const app = new Hapi.server(config.server);
