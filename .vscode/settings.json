@@ -1,0 +1,9 @@
+{
+  "editor.tabSize": 2,
+  "files.eol": "\r\n",
+  "eslint.options": {
+    "extensions": [".js", ".vue"]
+  },
+  "eslint.validate": ["javascript","vue"],
+  "eslint.autoFixOnSave": true,
+}
